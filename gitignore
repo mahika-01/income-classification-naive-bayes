@@ -1,0 +1,27 @@
+# Data files (raw datasets are too large / not meant for GitHub)
+data/
+*.csv
+*.tsv
+*.parquet
+*.json.gz
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# PySpark
+metastore_db/
+derby.log
+spark-warehouse/
+
+# OS/editor junk
+.DS_Store
+.vscode/
+.idea/
