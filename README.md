@@ -3,7 +3,7 @@
 Predicting whether an individual earns more or less than $50K/year from 1994 US Census data, comparing a fully supervised model against three semi-supervised extensions built on label propagation.
 
 ## Introduction
-In this project, I built a mixed Naive Bayes classifier (Gaussian for continuous features, Categorical for discrete features) to predict income class. Additionally, I compared a standard supervised model against three semi-supervised approaches that incorporate an unlabelled dataset via pseudo-labelling, then evaluated which strategy generalised best.
+In this project, I built a mixed Naive Bayes classifier (Gaussian for continuous features, Categorical for discrete features) to predict income class. I then compared the standard supervised model against three semi-supervised approaches that incorporate an unlabelled dataset, to evaluate which strategy generalised best.
 
 ## Data
 - ~30K+ labelled training records, a separate unlabelled training set, and a held-out test set, all derived from the 1994 US Census
@@ -23,7 +23,9 @@ Semi-supervised learning is often assumed to improve performance by making bette
 ## Tech stack
 Python, scikit-learn (GaussianNB, CategoricalNB, OrdinalEncoder), pandas, NumPy, matplotlib
 
+
 ## Repo structure
+```
 income_classification_naive_bayes.ipynb   # Full analysis notebook
 Income Classification Report.pdf          # Written report with extended discussion and figures
 requirements.txt
